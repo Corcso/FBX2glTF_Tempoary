@@ -848,9 +848,9 @@ static void ReadAnimations(RawModel& raw, FbxScene* pScene, const GltfOptions& o
       const FbxVector4 baseTranslation = baseTransform.GetT();
       const FbxQuaternion baseRotation = baseTransform.GetQ();
       const FbxVector4 baseScaling = computeLocalScale(pNode);
-      bool hasTranslation = false;
-      bool hasRotation = false;
-      bool hasScale = false;
+      bool hasTranslation = true;
+      bool hasRotation = true;
+      bool hasScale = true;
       bool hasMorphs = false;
 
       RawChannel channel;
